@@ -1,0 +1,138 @@
+@mainColor: #f59f00;
+@headerColor: rgba(0, 0, 0, 0.74);
+@hederTextColor:#b4b4b4;
+@hoverColor:rgba(222, 228, 234, 0.54);
+    
+.header{
+    background-color:@headerColor;
+    position: fixed;
+    z-index: 1;
+}
+.container{
+    //margin-top: 60px;
+    position: relative;
+    background-color: rgba(255, 255, 244, 0.76);
+}
+#cart{
+    box-shadow: 10 0 0px rgba(0,0,0,0.5);
+}
+.boughtPlace{
+     height:100%;
+    text-align: center;
+}
+.order{
+    font-size: 17px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.clean{
+     margin-top: 10px;
+    font-size: 12px;
+    display: inline-block;
+    float: right;
+}
+.footer{
+    display: block;
+    margin-left: 120px;
+    text-align: center;
+    background-color:white;
+}
+.glyphicon-bookmark{
+    display: inline-block;
+    color: @mainColor;
+    font-size:9em;
+    position: fixed;
+    z-index: 2;
+}
+.flip{
+    transform: scale(1, -1);
+    position: fixed;
+    bottom: 0;
+}
+.botoonPizzakma{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    font-size: 13px;
+    position: fixed;
+    text-align: center;
+    margin-left: 29px;
+    bottom: 0;
+    z-index: 2;
+}
+.strangehr{
+     z-index: 2;
+    margin-top:-1px;
+    margin-bottom: -1px;
+    border-top:2px dotted #ffc65c;
+}
+.pizzakma{
+    display: inline-block;
+    font-size: 25px;
+    width: 128px;
+    text-align: center;
+    position: fixed;
+    margin-left: -120px;
+    margin-top: 10px;
+}
+.telephone{
+    display: inline-block;
+    font-size: 18px;
+    color:@hederTextColor;
+    z-index: 2;
+    margin-top: 10px;
+    margin-left: 150px;
+}
+.reclamma{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 30px;
+    z-index: 2;
+    font-size: 15px;
+    color: @hederTextColor;
+}
+.free{font-size: 17px;}
+.enter{
+    float: right;
+    margin-top:10px;
+    display: inline-block;
+}
+.heHeader{margin-left: 150px;}
+.underpizza{
+    display: inline-block;
+    font-size: 17px;
+    margin-left: 150px;
+    margin-bottom: 5px;
+}
+.allpizza{
+    display: block;
+    font-size: 28px;
+    margin-top: 110px;
+    text-align: center;
+    font-family: serif;
+}
+.white{color: white;}
+.oval{
+    font-size: 15px;
+    margin-left: 6px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2px 7px;
+    background-color: @mainColor;
+}
+.filtersPlace{
+    margin: 5px;
+    text-align: center;
+    color: @mainColor;
+}
+.filters:hover{
+    background-color: @hoverColor;
+}
+div.btn-defolt{
+    font-size: 17px;
+}
+
+@import "pizza/pizza-card";
