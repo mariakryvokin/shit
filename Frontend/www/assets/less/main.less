@@ -8,31 +8,41 @@
     position: fixed;
     z-index: 1;
 }
+
 .container{
-    //margin-top: 60px;
     position: relative;
     background-color: rgba(255, 255, 244, 0.76);
 }
-#cart{
-    box-shadow: 10 0 0px rgba(0,0,0,0.5);
+.rightside{
+    padding-bottom: 10px;
+    z-index: 2;
+    height: 100%;
+    box-shadow: red;
 }
 .boughtPlace{
-     height:100%;
+    display: inline;
     text-align: center;
 }
 .order{
     font-size: 17px;
-    margin-top: 10px;
-    margin-left: 10px;
     display: inline-block;
     text-align: center;
 }
-
+.buy{
+   //bottom: 0;
+    display: inline-block;
+    margin: 10px;
+}
 .clean{
      margin-top: 10px;
     font-size: 12px;
     display: inline-block;
     float: right;
+}
+.sum{
+    display:inline-block;
+    margin: 10px;
+    
 }
 .footer{
     display: block;
@@ -134,5 +144,38 @@
 div.btn-defolt{
     font-size: 17px;
 }
+
+//СТОІНКА ЗАМОВНЕННЯ
+.next{
+    float: right;
+    margin: 20px;
+}
+.contactData{
+    display: inline-block;
+    margin: 5px;
+}
+.bs-callout {
+    //float: right;
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+    border-left-color: @mainColor;
+}
+.tabrow{
+    margin: 10px;
+    width: 50%;
+    display: inline-block;
+}
+.displ{
+    display: none;
+}
+.helpers{
+    display: inline;
+    border-color: red;
+}
+
 
 @import "pizza/pizza-card";

@@ -1,22 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Pizza</title>
-    
-    <!-- Bootsrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/less/main.css" />
-    <!-- LESS основний файл -->
-    <link rel="stylesheet/less" type="text/css" href="assets/less/main.less" />
-    <!-- LESS JavaScript компілятор -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
-    
-
-
-</head>
-<body>
-    
+<% include common/header.ejs %>
+<%include common/rightpanel.ejs%>
+   
 <div class="container col-md-9 col-sm-6 col-xs-4">
         <div class="flip glyphicon glyphicon-bookmark"></div>
         <div class="botoonPizzakma white"><b>Цього тижня на все</b>
@@ -39,29 +23,12 @@
             <div class="filters btn filter-oceans">З Морепродуктами</div>
             <div class="filters btn filter-vegan">Вега</div>
         </div>
-    
-    
-    
-   
-      
+ 
 <hr></hr>
-    <div class="row" id="pizza_list">
-     
-    
-    </div>
-     <div class="footer col-md-9 col-sm-6 col-xs-4">Pizza.22 - практичний проект в межах курсу JavaScript в Києво-Могилянській Академії<p>Доставка піци не здійснюється</p>
-    </div>
-</div>
- <div>
-        <b class="order">Замовлення</b>
-        <span id="ovalOrderpizza" class="oval white">1</span>
-        <span class="clean btn" > Очистити замовлення</span>
-    </div>
-    <div class="boughtPlace">Немає нічого в холодильнику? <p> Купи піцу!</p></div>
-<div id="cart" class="col-md-3 col-sm-6 col-xs-8">
-   
+    <div class="row" id="pizza_list"></div>
 </div>
     
+  
 
 
 <!-- jQuery JavaScript -->
@@ -72,5 +39,6 @@
 
 <!--Own JavaScript -->
 <script type="text/javascript"  src="assets/js/main.js"> </script>
-</body>
-</html>
+
+
+<% include common/footer.ejs %>

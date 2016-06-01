@@ -2068,7 +2068,35 @@ process.nextTick = function (fun) {
         setTimeout(drainQueue, 0);
     }
 };
+//work with googlemap
+    function initialize() {
+    //Тут починаємо працювати з картою
+    var mapProp = {
+    center: new google.maps.LatLng(50.464379,30.519131),
+    zoom: 11
+    };
+    var html_element = document.getElementById("googleMap");
+    var map = new google.maps.Map(html_element, mapProp);
+    //Карта створена і показана
+    }
+    //Коли сторінка завантажилась
+    google.maps.event.addDomListener(window, 'load', initialize);
+    
 
+    //work with form
+    var FORMA= $(".forma").html();
+     
+    if($(FORMA).find("#telephone")!="") checkTell();
+       function checkTell(){
+   var $forma = $(FORMA);
+    var $telephone = $forma.find("#telephone");
+   if($telephone.length>10 && $telephone.text().substr(0,2)!="+38"){
+      $forma.find(".displ").addClass(".helpers");
+   }
+    }
+    
+    
+    
 // v8 likes predictible objects
 function Item(fun, array) {
     this.fun = fun;
